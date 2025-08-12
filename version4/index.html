@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixel Tank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav id="side-nav" class="main-nav" aria-label="Primary navigation">
+        <ul>
+            <li class="nav-cta active" data-target="hero" tabindex="0"><a href="#hero" class="menu-item">Home</a></li>
+            <li class="nav-cta" data-target="services" tabindex="0"><a href="#services" class="menu-item">Our
+                    Services</a></li>
+            <li class="nav-cta" data-target="why" tabindex="0"><a href="#why" class="menu-item">Why Choose Us</a></li>
+            <li class="nav-cta" data-target="work" tabindex="0"><a href="#work" class="menu-item">Our Work</a></li>
+            <li class="nav-cta" data-target="contact" tabindex="0"><a href="#contact" class="menu-item">Contact</a></li>
+        </ul>
+        <div id="nav-highlight"></div>
+    </nav>
+
+    <!-- Add this SVG background -->
+    <svg class="wavy-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true"
+        focusable="false" style="--accent: #4a90e2;">
+
+        <!-- First wave of squares -->
+        <g class="wave-squares">
+            <rect x="0" y="155" width="8" height="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,20; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="8; 12; 8" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="8; 12; 8" />
+            </rect>
+            <rect x="120" y="170" width="6" height="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,35; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="6; 10; 6" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="6; 10; 6" />
+            </rect>
+            <rect x="240" y="185" width="10" height="10" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,-30; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="10; 14; 10" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="10; 14; 10" />
+            </rect>
+            <rect x="360" y="195" width="7" height="7" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,-40; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="7; 11; 7" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="7; 11; 7" />
+            </rect>
+            <rect x="480" y="195" width="9" height="9" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,-55; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="9; 13; 9" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="9; 13; 9" />
+            </rect>
+            <rect x="600" y="140" width="11" height="11" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,-25; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="11; 15; 11" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="11; 15; 11" />
+            </rect>
+            <rect x="720" y="125" width="6" height="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,60; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="6; 10; 6" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="6; 10; 6" />
+            </rect>
+            <rect x="840" y="130" width="8" height="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,75; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="8; 12; 8" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="8; 12; 8" />
+            </rect>
+            <rect x="960" y="115" width="10" height="10" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,80; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="10; 14; 10" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="10; 14; 10" />
+            </rect>
+            <rect x="1080" y="125" width="7" height="7" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,60; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="7; 11; 7" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="7; 11; 7" />
+            </rect>
+            <rect x="1200" y="145" width="9" height="9" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,20; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="9; 13; 9" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="9; 13; 9" />
+            </rect>
+            <rect x="1320" y="155" width="8" height="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite"
+                    values="0,0; 0,20; 0,0" />
+                <animate attributeName="width" dur="8s" repeatCount="indefinite" values="8; 12; 8" />
+                <animate attributeName="height" dur="8s" repeatCount="indefinite" values="8; 12; 8" />
+            </rect>
+        </g>
+
+        <!-- Second wave of squares with different timing -->
+        <g class="wave-squares">
+            <rect x="60" y="165" width="5" height="5" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,65; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="5; 9; 5" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="5; 9; 5" />
+            </rect>
+            <rect x="180" y="215" width="12" height="12" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,-50; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="12; 16; 12" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="12; 16; 12" />
+            </rect>
+            <rect x="300" y="225" width="7" height="7" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,-45; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="7; 11; 7" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="7; 11; 7" />
+            </rect>
+            <rect x="420" y="225" width="6" height="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,-70; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="6; 10; 6" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="6; 10; 6" />
+            </rect>
+            <rect x="540" y="175" width="11" height="11" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,5; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="11; 15; 11" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="11; 15; 11" />
+            </rect>
+            <rect x="660" y="175" width="8" height="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,45; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="8; 12; 8" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="8; 12; 8" />
+            </rect>
+            <rect x="780" y="215" width="9" height="9" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,5; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="9; 13; 9" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="9; 13; 9" />
+            </rect>
+            <rect x="900" y="215" width="6" height="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,5; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="6; 10; 6" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="6; 10; 6" />
+            </rect>
+            <rect x="1020" y="215" width="10" height="10" fill="var(--accent)" stroke="var(--accent)"
+                stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,5; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="10; 14; 10" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="10; 14; 10" />
+            </rect>
+            <rect x="1140" y="175" width="7" height="7" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,-25; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="7; 11; 7" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="7; 11; 7" />
+            </rect>
+            <rect x="1260" y="165" width="8" height="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,-15; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="8; 12; 8" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="8; 12; 8" />
+            </rect>
+            <rect x="1380" y="165" width="5" height="5" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="6s" repeatCount="indefinite"
+                    values="0,0; 0,-15; 0,0" />
+                <animate attributeName="width" dur="6s" repeatCount="indefinite" values="5; 9; 5" />
+                <animate attributeName="height" dur="6s" repeatCount="indefinite" values="5; 9; 5" />
+            </rect>
+        </g>
+
+        <!-- Third wave of squares -->
+        <g class="wave-squares">
+            <rect x="30" y="145" width="9" height="9" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,-15; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="9; 13; 9" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="9; 13; 9" />
+            </rect>
+            <rect x="150" y="175" width="6" height="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,-35; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="6; 10; 6" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="6; 10; 6" />
+            </rect>
+            <rect x="270" y="175" width="8" height="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,-35; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="8; 12; 8" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="8; 12; 8" />
+            </rect>
+            <rect x="390" y="135" width="11" height="11" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,5; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="11; 15; 11" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="11; 15; 11" />
+            </rect>
+            <rect x="510" y="135" width="7" height="7" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,5; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="7; 11; 7" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="7; 11; 7" />
+            </rect>
+            <rect x="630" y="135" width="10" height="10" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,65; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="10; 14; 10" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="10; 14; 10" />
+            </rect>
+            <rect x="750" y="135" width="6" height="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,65; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="6; 10; 6" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="6; 10; 6" />
+            </rect>
+            <rect x="870" y="195" width="9" height="9" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,5; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="9; 13; 9" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="9; 13; 9" />
+            </rect>
+            <rect x="990" y="195" width="8" height="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,5; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="8; 12; 8" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="8; 12; 8" />
+            </rect>
+            <rect x="1110" y="145" width="12" height="12" fill="var(--accent)" stroke="var(--accent)"
+                stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,-15; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="12; 16; 12" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="12; 16; 12" />
+            </rect>
+            <rect x="1230" y="135" width="7" height="7" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,-5; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="7; 11; 7" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="7; 11; 7" />
+            </rect>
+            <rect x="1350" y="145" width="10" height="10" fill="var(--accent)" stroke="var(--accent)"
+                stroke-width="1.5">
+                <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite"
+                    values="0,0; 0,-15; 0,0" />
+                <animate attributeName="width" dur="10s" repeatCount="indefinite" values="10; 14; 10" />
+                <animate attributeName="height" dur="10s" repeatCount="indefinite" values="10; 14; 10" />
+            </rect>
+        </g>
+    </svg>
+
+    <main id="main-content" tabindex="0">
+        <!-- Hero -->
+        <section id="hero" class="panel hero-section">
+            <div class="hero-content">
+                <h1>PIXEL TANK</h1>
+                <p>Digital peace of mind for small & medium enterprises.<br />We design, develop, and support your
+                    digital presence.</p>
+            </div>
+        </section>
+
+        <!-- Our Services -->
+        <section id="services" class="panel services-section">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">Comprehensive digital solutions that take the fear out of going online</p>
+
+            <div class="services-layout">
+                <article class="service-card">
+                    <h3>Web Design & Development</h3>
+                    <p>Custom WordPress websites that look stunning and perform flawlessly across all devices.</p>
+                    <ul>
+                        <li>Responsive design for all devices</li>
+                        <li>Custom WordPress development</li>
+                        <li>SEO-optimized structure</li>
+                        <li>Fast loading times</li>
+                        <li>User-friendly CMS</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Hosting & Support</h3>
+                    <p>Reliable WP Engine hosting with ongoing maintenance and content updates.</p>
+                    <ul>
+                        <li>WP Engine premium hosting</li>
+                        <li>Daily automated backups</li>
+                        <li>Security monitoring</li>
+                        <li>Content updates</li>
+                        <li>Technical support</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>SEO & Analytics</h3>
+                    <p>Get found online with our comprehensive SEO services and detailed analytics reporting.</p>
+                    <ul>
+                        <li>On-page SEO optimization</li>
+                        <li>Google Analytics setup</li>
+                        <li>Performance monitoring</li>
+                        <li>Monthly reports</li>
+                        <li>Search ranking improvement</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Ongoing Development</h3>
+                    <p>Your website grows with your business through continuous improvements and new features.</p>
+                    <ul>
+                        <li>Feature enhancements</li>
+                        <li>Security updates</li>
+                        <li>Performance optimization</li>
+                        <li>Content management</li>
+                        <li>Technical consultation</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Why Choose Pixel Tank? -->
+        <section id="why" class="panel why-section">
+            <h2>Why Choose Pixel Tank?</h2>
+            <div class="why-layout">
+                <div class="why-text">
+                    <p>We understand that the digital world can feel overwhelming for small and medium enterprises.
+                        That's why we've built Pixel Tank to be your trusted digital partner.</p>
+                    <p>We don't just build websites – we create complete digital solutions that give you peace of mind.
+                        From the initial design to ongoing support, we handle every aspect of your digital presence so
+                        you can focus on what you do best: running your business.</p>
+                    <p>Our approach combines modern design, reliable technology, and personal service to ensure your
+                        website not only looks great but also drives results for your business.</p>
+                </div>
+                <div class="why-stats">
+                    <div class="stat-card">100% Client Satisfaction</div>
+                    <div class="stat-card">24/7 Support Available</div>
+                    <div class="stat-card">99.9% Uptime Guarantee</div>
+                    <div class="stat-card">1+ Happy Clients</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Work -->
+        <section id="work" class="panel work-section">
+            <h2>Our Work</h2>
+            <div class="work-card-wrapper">
+                <article class="work-card">
+                    <h3>Miascape</h3>
+                    <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user
+                        experience, and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for
+                        maximum reliability and performance.</p>
+                    <a href="https://www.miascape.co.uk" target="_blank" rel="noopener noreferrer"
+                        class="visit-link">Visit
+                        Website →</a>
+                </article>
+                <article class="work-card">
+                    <h3>Miascape</h3>
+                    <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user
+                        experience, and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for
+                        maximum reliability and performance.</p>
+                    <a href="https://www.miascape.co.uk" target="_blank" rel="noopener noreferrer"
+                        class="visit-link">Visit
+                        Website →</a>
+                </article>
+                <article class="work-card">
+                    <h3>Miascape</h3>
+                    <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user
+                        experience, and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for
+                        maximum reliability and performance.</p>
+                    <a href="https://www.miascape.co.uk" target="_blank" rel="noopener noreferrer"
+                        class="visit-link">Visit
+                        Website →</a>
+                </article>
+                <article class="work-card">
+                    <h3>Miascape</h3>
+                    <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user
+                        experience, and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for
+                        maximum reliability and performance.</p>
+                    <a href="https://www.miascape.co.uk" target="_blank" rel="noopener noreferrer"
+                        class="visit-link">Visit
+                        Website →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Us Form -->
+        <section id="contact" class="panel contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-card">
+                <form id="contact-form" action="#" method="post" novalidate>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script defer src="main.js"></script>
+</body>
+
+</html>

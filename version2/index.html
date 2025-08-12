@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Tank - Digital Agency for Small & Medium Enterprises</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">PIXEL TANK</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="hero-content">
+            <h1>PIXEL TANK</h1>
+            <p>Digital peace of mind for small & medium enterprises. We design, develop, and support your digital
+                presence.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
+        </div>
+    </section>
+
+    <section id="services" class="section reveal">
+        <h2>Our Services</h2>
+        <p style="text-align: center; font-size: 20px; opacity: 0.8; margin-bottom: 20px;">
+            Comprehensive digital solutions that take the fear out of going online
+        </p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Web Design & Development</h3>
+                <p>Custom WordPress websites that look stunning and perform flawlessly across all devices.</p>
+                <ul>
+                    <li>Responsive design for all devices</li>
+                    <li>Custom WordPress development</li>
+                    <li>SEO-optimized structure</li>
+                    <li>Fast loading times</li>
+                    <li>User-friendly CMS</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Hosting & Support</h3>
+                <p>Reliable WP Engine hosting with ongoing maintenance and content updates.</p>
+                <ul>
+                    <li>WP Engine premium hosting</li>
+                    <li>Daily automated backups</li>
+                    <li>Security monitoring</li>
+                    <li>Content updates</li>
+                    <li>Technical support</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>SEO & Analytics</h3>
+                <p>Get found online with our comprehensive SEO services and detailed analytics reporting.</p>
+                <ul>
+                    <li>On-page SEO optimization</li>
+                    <li>Google Analytics setup</li>
+                    <li>Performance monitoring</li>
+                    <li>Monthly reports</li>
+                    <li>Search ranking improvement</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3>Ongoing Development</h3>
+                <p>Your website grows with your business through continuous improvements and new features.</p>
+                <ul>
+                    <li>Feature enhancements</li>
+                    <li>Security updates</li>
+                    <li>Performance optimization</li>
+                    <li>Content management</li>
+                    <li>Technical consultation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section reveal">
+        <h2>Why Choose Pixel Tank?</h2>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p>We understand that the digital world can feel overwhelming for small and medium enterprises. That's
+                    why we've built Pixel Tank to be your trusted digital partner.</p>
+
+                <p>We don't just build websites – we create complete digital solutions that give you peace of mind. From
+                    the initial design to ongoing support, we handle every aspect of your digital presence so you can
+                    focus on what you do best: running your business.</p>
+
+                <p>Our approach combines modern design, reliable technology, and personal service to ensure your website
+                    not only looks great but also drives results for your business.</p>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime Guarantee</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">1+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section reveal">
+        <h2>Our Work</h2>
+
+        <div class="portfolio-item">
+            <h3>Miascape</h3>
+            <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user experience,
+                and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for maximum reliability
+                and performance.</p>
+            <a href="https://www.miascape.co.uk" target="_blank" class="portfolio-link">Visit Website →</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact reveal">
+            <h2>Ready to Get Started?</h2>
+            <p>Let's discuss your project and see how we can help build your digital presence</p>
+
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="project">Tell us about your project *</label>
+                    <textarea id="project" name="project"
+                        placeholder="What kind of website do you need? What are your goals? Any specific requirements?"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pixel Tank. Building digital peace of mind.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

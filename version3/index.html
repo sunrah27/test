@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixel Tank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav id="side-nav" class="main-nav" aria-label="Primary navigation">
+        <ul>
+            <li class="nav-cta active" data-target="hero" tabindex="0"><a href="#hero" class="menu-item">Home</a></li>
+            <li class="nav-cta" data-target="services" tabindex="0"><a href="#services" class="menu-item">Our
+                    Services</a></li>
+            <li class="nav-cta" data-target="why" tabindex="0"><a href="#why" class="menu-item">Why Choose Us</a></li>
+            <li class="nav-cta" data-target="work" tabindex="0"><a href="#work" class="menu-item">Our Work</a></li>
+            <li class="nav-cta" data-target="contact" tabindex="0"><a href="#contact" class="menu-item">Contact</a></li>
+        </ul>
+        <div id="nav-highlight"></div>
+    </nav>
+
+    <!-- Add this SVG background -->
+    <svg class="wavy-background" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320"
+        aria-hidden="true" focusable="false">
+        <path class="wave" fill="none" stroke="var(--accent)" stroke-width="1.5"
+            d="M0,160 C480,200 960,120 1440,160 L1440,320 L0,320 Z">
+            <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+            M0,160 C480,200 960,120 1440,160 L1440,320 L0,320 Z;
+            M0,180 C480,140 960,200 1440,180 L1440,320 L0,320 Z;
+            M0,160 C480,200 960,120 1440,160 L1440,320 L0,320 Z
+            " />
+        </path>
+
+        <path class="wave" fill="none" stroke="var(--accent)" stroke-width="1.5"
+            d="M0,170 C480,230 960,130 1440,170 L1440,320 L0,320 Z">
+            <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
+            M0,170 C480,230 960,130 1440,170 L1440,320 L0,320 Z;
+            M0,150 C480,180 960,220 1440,150 L1440,320 L0,320 Z;
+            M0,170 C480,230 960,130 1440,170 L1440,320 L0,320 Z
+            " />
+        </path>
+
+        <path class="wave" fill="none" stroke="var(--accent)" stroke-width="1.5"
+            d="M0,150 C480,180 960,140 1440,150 L1440,320 L0,320 Z">
+            <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
+            M0,150 C480,180 960,140 1440,150 L1440,320 L0,320 Z;
+            M0,130 C480,140 960,200 1440,130 L1440,320 L0,320 Z;
+            M0,150 C480,180 960,140 1440,150 L1440,320 L0,320 Z
+            " />
+        </path>
+    </svg>
+
+    <main id="main-content" tabindex="0">
+        <!-- Hero -->
+        <section id="hero" class="panel hero-section">
+            <div class="hero-content">
+                <h1>PIXEL TANK</h1>
+                <p>Digital peace of mind for small & medium enterprises.<br />We design, develop, and support your
+                    digital presence.</p>
+            </div>
+        </section>
+
+        <!-- Our Services -->
+        <section id="services" class="panel services-section">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">Comprehensive digital solutions that take the fear out of going online</p>
+
+            <div class="services-layout">
+                <article class="service-card">
+                    <h3>Web Design & Development</h3>
+                    <p>Custom WordPress websites that look stunning and perform flawlessly across all devices.</p>
+                    <ul>
+                        <li>Responsive design for all devices</li>
+                        <li>Custom WordPress development</li>
+                        <li>SEO-optimized structure</li>
+                        <li>Fast loading times</li>
+                        <li>User-friendly CMS</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Hosting & Support</h3>
+                    <p>Reliable WP Engine hosting with ongoing maintenance and content updates.</p>
+                    <ul>
+                        <li>WP Engine premium hosting</li>
+                        <li>Daily automated backups</li>
+                        <li>Security monitoring</li>
+                        <li>Content updates</li>
+                        <li>Technical support</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>SEO & Analytics</h3>
+                    <p>Get found online with our comprehensive SEO services and detailed analytics reporting.</p>
+                    <ul>
+                        <li>On-page SEO optimization</li>
+                        <li>Google Analytics setup</li>
+                        <li>Performance monitoring</li>
+                        <li>Monthly reports</li>
+                        <li>Search ranking improvement</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <h3>Ongoing Development</h3>
+                    <p>Your website grows with your business through continuous improvements and new features.</p>
+                    <ul>
+                        <li>Feature enhancements</li>
+                        <li>Security updates</li>
+                        <li>Performance optimization</li>
+                        <li>Content management</li>
+                        <li>Technical consultation</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Why Choose Pixel Tank? -->
+        <section id="why" class="panel why-section">
+            <h2>Why Choose Pixel Tank?</h2>
+            <div class="why-layout">
+                <div class="why-text">
+                    <p>We understand that the digital world can feel overwhelming for small and medium enterprises.
+                        That's why we've built Pixel Tank to be your trusted digital partner.</p>
+                    <p>We don't just build websites – we create complete digital solutions that give you peace of mind.
+                        From the initial design to ongoing support, we handle every aspect of your digital presence so
+                        you can focus on what you do best: running your business.</p>
+                    <p>Our approach combines modern design, reliable technology, and personal service to ensure your
+                        website not only looks great but also drives results for your business.</p>
+                </div>
+                <div class="why-stats">
+                    <div class="stat-card">100% Client Satisfaction</div>
+                    <div class="stat-card">24/7 Support Available</div>
+                    <div class="stat-card">99.9% Uptime Guarantee</div>
+                    <div class="stat-card">1+ Happy Clients</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Work -->
+        <section id="work" class="panel work-section">
+            <h2>Our Work</h2>
+            <div class="work-card-wrapper">
+                <article class="work-card">
+                    <h3>Miascape</h3>
+                    <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user
+                        experience, and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for
+                        maximum reliability and performance.</p>
+                    <a href="https://www.miascape.co.uk" target="_blank" rel="noopener noreferrer"
+                        class="visit-link">Visit
+                        Website →</a>
+                </article>
+                <article class="work-card">
+                    <h3>Miascape</h3>
+                    <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user
+                        experience, and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for
+                        maximum reliability and performance.</p>
+                    <a href="https://www.miascape.co.uk" target="_blank" rel="noopener noreferrer"
+                        class="visit-link">Visit
+                        Website →</a>
+                </article>
+                <article class="work-card">
+                    <h3>Miascape</h3>
+                    <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user
+                        experience, and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for
+                        maximum reliability and performance.</p>
+                    <a href="https://www.miascape.co.uk" target="_blank" rel="noopener noreferrer"
+                        class="visit-link">Visit
+                        Website →</a>
+                </article>
+                <article class="work-card">
+                    <h3>Miascape</h3>
+                    <p>A beautiful, responsive website for a creative business, featuring modern design, smooth user
+                        experience, and comprehensive SEO optimization. Built with WordPress and hosted on WP Engine for
+                        maximum reliability and performance.</p>
+                    <a href="https://www.miascape.co.uk" target="_blank" rel="noopener noreferrer"
+                        class="visit-link">Visit
+                        Website →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Us Form -->
+        <section id="contact" class="panel contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-card">
+                <form id="contact-form" action="#" method="post" novalidate>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script defer src="main.js"></script>
+</body>
+
+</html>
